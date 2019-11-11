@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .grid-container{
+        width: 100%;
+        height: 500px;
+        display: grid;
+        /* grid-template-columns: repeat(5, 1fr);
+        /* grid-template-rows: 2fr repeat(10, 1fr); */
+        /* grid-template: 50px 50px 50px 50px / repeat(10,100px); */
+        grid-template: repeat(3, 100px) / repeat(5, 1fr);
+        /*grid-column-gap: 20px;  it is the space between the comluns
+        grid-row-gap: 30px; it is the space between the rows */
+        /* grid-gap: 20px; */
+        /* justify-items: center;
+        align-items: center; 
+        place-items: center end;*/ /* first one is for align-items and the second one for justify-items*/
+        /* grid-template-areas:"header header header header header"
+                            "main main main main sidebar"
+                            "main main main main sidebar"
+                            "footer footer footer footer footer"; */
+        
+    }
+    .grid-item{
+        width: 100%;
+        height: 300px;
+    }
+    .item:nth-last-of-type(3n){
+        background-color: blue;
+    }
+    .item:nth-last-of-type(3n+1){
+        background-color: tomato;
+    }
+    .item:nth-last-of-type(3n+2){
+        background-color: yellow;
+    }
+    /* .item:nth-last-of-type(even){
+        background-color: brown;
+    }
+    .item:nth-last-of-type(odd){
+        background-color: blue;
+    } */
+    .item01{
+        grid-column-start: 1;
+        grid-row: 1/span 2;
+    }
+    .item03{
+        grid-column-start: 3;
+        grid-row: 1/span 2;
+    }
+    .item04{
+        grid-column-start: 4;
+        grid-row: 1/span 2;
+    }
+    .item06{
+        grid-column-start: 1;
+        grid-row: span 1;
+    }
+    .item07{
+        grid-column-start:2;
+        grid-row: 2/span 1;
+    }
+    .item10{
+        grid-column-start:5;
+        grid-row: 2/ span 1;
+    }
+    .item13{
+        grid-row-start: 3;
+        grid-column-end: span 2;
+    }
+    /* .grid-item{
+        width: 100%;
+        height:100px;
+    }
+    .grid-item:nth-last-of-type(even){
+        background-color: brown;
+    }
+    .grid-item:nth-last-of-type(odd){
+        background-color: blue;
+    } */
+    /* header{
+        background-color: tomato;
+        grid-area: header;
+        grid-column: 2;
+    }
+    main{
+        background-color: rgb(13, 238, 219);
+        grid-area: main;
+    }
+    aside{
+        background-color: blue;
+        grid-area: sidebar;
+    }
+    footer{
+        background-color: yellow;
+        grid-area: footer;
+    } */
+   
+
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <!-- <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div> -->
+        <div class="item item01">01</div> <!--.item.item$${$$}*10 -->
+        <div class="item item02">02</div>
+        <div class="item item03">03</div>
+        <div class="item item04">04</div>
+        <div class="item item05">05</div>
+        <div class="item item06">06</div>
+        <div class="item item07">07</div>
+        <div class="item item08">08</div>
+        <div class="item item09">09</div>
+        <div class="item item10">10</div>
+        <div class="item item11">11</div>
+        <div class="item item12">12</div>
+        <div class="item item13">13</div>
+        <div class="item item14">14</div>
+        <div class="item item15">15</div>
+       <!--  <header></header>
+        <main></main>
+        <aside class="sidebar"></aside>
+        <footer></footer>  -->
+    </section>
+</body>
+</html>

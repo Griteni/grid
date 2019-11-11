@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+    <style>
+        body{
+            background-color: rgb(189, 10, 70);
+        }
+
+        .container{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template:repeat(3, 100%) / repeat(4, 1fr);
+            grid-gap: 10px;
+            /*justify-content: space-evenly; 
+            align-content: center; the spaces are spread in the same way for each element */
+            place-content:  center space-evenly ;
+        }
+        .item{
+        width: 100%;
+        align-items: center;
+    }
+
+    figure{
+        box-sizing: border-box;
+        height: auto;
+        padding: 3%;
+        position: relative;
+        background-color: rgba(90, 17, 41, 0.4);
+    }
+    figure img{
+        width: 60%;
+    }
+    figure span{
+        position: absolute;
+        box-sizing: border-box;
+        padding: 0 15px 0 15px;
+        color: white;
+        font-size: 0.8em;
+    }
+
+</style>
+</head>
+<body>
+    <section class="container">
+        <div class="item item01"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div> 
+        <div class="item item02"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item03"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item04"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item05"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item06"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item07"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item08"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item09"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+        <div class="item item10"><figure><img src="tech.jpg"><span><h3>Title</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis eos dicta alias sequi tenetur adipisci ea repellat.</p></span></figure></div>
+    </section>  
+</body>
+</html>
